@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./work.scss";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
-
+import arrow from "../../assets/arrow.png";
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
@@ -64,13 +64,13 @@ export default function Works() {
         ))}
       </div>
       <img
-        src={<ArrowBackIosIcon />}
+        src={arrow}
         className="arrow left"
         alt="arrow"
         onClick={() => handleClick("left")}
       />
       <img
-        src="/assets/arrow.png"
+        src={arrow}
         className="arrow right"
         alt="arrow"
         onClick={() => handleClick("right")}

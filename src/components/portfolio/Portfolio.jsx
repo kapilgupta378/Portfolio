@@ -10,7 +10,6 @@ import {
 } from "./data";
 import { useEffect } from "react";
 
-
 function Portfolio() {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
@@ -24,18 +23,18 @@ function Portfolio() {
       id: "web",
       title: "Web App",
     },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
+    // {
+    //   id: "mobile",
+    //   title: "Mobile App",
+    // },
     {
       id: "design",
       title: "Design",
     },
-    {
-      id: "content",
-      title: "Content",
-    },
+    // {
+    //   id: "content",
+    //   title: "Content",
+    // },
   ];
 
   useEffect(() => {
@@ -75,12 +74,12 @@ function Portfolio() {
       </ul>
       <div className="container">
         {data.map((d) => {
-          return(
-          <div className="item">
-            <img src={d.img} alt="" />
-            <h3>{d.title}</h3>
-          </div>
-        );
+          return (
+            <div className="item">
+              <img src={d.img} alt="" />
+              <h3>{d.title}</h3>
+            </div>
+          );
         })}
       </div>
     </div>
