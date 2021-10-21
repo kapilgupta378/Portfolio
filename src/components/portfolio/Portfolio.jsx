@@ -10,7 +10,7 @@ import {
 } from "./data";
 import { useEffect } from "react";
 
-function Portfolio() {
+function Portfolio({ openOption }) {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
 
@@ -60,7 +60,10 @@ function Portfolio() {
   }, [selected]);
 
   return (
-    <div className="portfolio" id="portfolio">
+    <div
+      className={"portfolio " + (openOption.portfolio && "active")}
+      id="portfolio"
+    >
       <h1>Portfolio</h1>
       <ul>
         {list.map((item, key) => (

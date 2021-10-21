@@ -2,8 +2,9 @@ import "./intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import img from "./kapilgupta.png";
-import video from "./videos/video3.mp4";
-function Intro() {
+import video from "./videos/video1.mp4";
+import down from "../../assets/down.png";
+function Intro({ menuOpen, openOption }) {
   const textRef = useRef();
 
   useEffect(() => {
@@ -20,7 +21,13 @@ function Intro() {
   return (
     <div className="intro" id="intro">
       <video className="video" src={video} autoPlay loop muted />
-      <div className="bannerWrap">
+      <div
+        className={
+          "bannerWrap " +
+          (menuOpen && "active ") +
+          (openOption.introHide && "introHide")
+        }
+      >
         <div className="left">
           <div className="imgContainer">
             <img src={img} alt="" />
@@ -35,7 +42,7 @@ function Intro() {
             </h3>
           </div>
           <a href="#portfolio">
-            <img src="assets/down.png" alt="" />
+            <img src={down} alt="down" />
           </a>
         </div>
       </div>
