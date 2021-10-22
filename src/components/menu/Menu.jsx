@@ -48,7 +48,7 @@ function Menu({ menuOpen, setMenuOpen, setOpenOption }) {
             setOpenOption({
               portfolio: false,
               work: false,
-              testimonial: false,
+              testimonial: true,
               contact: false,
               introHide: true,
             });
@@ -58,7 +58,13 @@ function Menu({ menuOpen, setMenuOpen, setOpenOption }) {
         </li>
         <li
           onClick={() => {
-            setOpenOption({});
+            setOpenOption({
+              portfolio: false,
+              work: false,
+              testimonial: false,
+              contact: true,
+              introHide: true,
+            });
           }}
         >
           <a href="#contact">Contact</a>

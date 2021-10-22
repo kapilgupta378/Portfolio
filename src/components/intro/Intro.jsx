@@ -8,8 +8,6 @@ function Intro({ menuOpen, openOption }) {
   const textRef = useRef();
 
   useEffect(() => {
-    console.log(textRef);
-
     init(textRef.current, {
       showCursor: true,
       backDelay: 1500,
@@ -41,9 +39,6 @@ function Intro({ menuOpen, openOption }) {
               Full Time <span ref={textRef}></span>
             </h3>
           </div>
-          <a href="#portfolio">
-            <img src={down} alt="down" />
-          </a>
         </div>
       </div>
     </div>

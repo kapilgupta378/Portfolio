@@ -68,6 +68,7 @@ function Portfolio({ openOption }) {
       <ul>
         {list.map((item, key) => (
           <Portfoliolist
+            key={key}
             title={item.title}
             active={selected === item.id}
             setSelected={setSelected}
@@ -76,9 +77,9 @@ function Portfolio({ openOption }) {
         ))}
       </ul>
       <div className="container">
-        {data.map((d) => {
+        {data.map((d, key) => {
           return (
-            <div className="item">
+            <div key={key} className="item">
               <img src={d.img} alt="" />
               <h3>{d.title}</h3>
             </div>

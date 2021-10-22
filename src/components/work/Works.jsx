@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./work.scss";
-import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import arrow from "../../assets/arrow.png";
 import mobile from "../../assets/mobile.png";
 import globe from "../../assets/globe.png";
@@ -44,8 +43,8 @@ export default function Works({ menuOpen, openOption }) {
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 62}vw)` }}
       >
-        {data.map((d) => (
-          <div className="container ">
+        {data.map((d, key) => (
+          <div key={key} className="container ">
             <div className="item">
               <div className="left">
                 <div className="leftContainer">

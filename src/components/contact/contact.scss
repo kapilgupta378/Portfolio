@@ -1,9 +1,21 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: white;
+  width: 72%;
+  height: 71%;
+  position: absolute;
+  top: 20%;
+  left: -72%;
+  background-color: $mainColor2;
   display: flex;
-
+  transition: all 1s ease;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  &.active {
+    left: 4%;
+  }
   @include mobile {
     flex-direction: column;
   }
@@ -29,6 +41,8 @@
     align-items: center;
 
     h2 {
+      color: white;
+      font-weight: bold;
       font-size: 30px;
     }
 
@@ -41,10 +55,13 @@
       justify-content: space-around;
 
       input {
+        background-color: #d9d9d97d;
         width: 300px;
         height: 30px;
         font-size: 14px;
-
+        border-radius: 10px;
+        outline: none;
+        border: none;
         @include mobile {
           width: 200px;
           height: 20px;
@@ -52,10 +69,12 @@
       }
 
       textarea {
+        background-color: #d9d9d97d;
         width: 300px;
         height: 200px;
         font-size: 14px;
-
+        border-radius: 10px;
+        outline: none;
         @include mobile {
           width: 200px;
           height: 100px;
