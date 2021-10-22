@@ -1,10 +1,11 @@
 import "./menu.scss";
 
-function Menu({ menuOpen, setMenuOpen, setOpenOption }) {
+function Menu({ menuOpen, openOption, setOpenOption }) {
   return (
     <div className={"menu " + (menuOpen && "active")}>
       <ul>
         <li
+          className={!openOption.introHide && "active"}
           onClick={() => {
             setOpenOption({
               portfolio: false,
@@ -18,6 +19,7 @@ function Menu({ menuOpen, setMenuOpen, setOpenOption }) {
           <a href="#intro">Home</a>
         </li>
         <li
+          className={openOption.portfolio && "active"}
           onClick={() => {
             setOpenOption({
               portfolio: true,
@@ -31,6 +33,7 @@ function Menu({ menuOpen, setMenuOpen, setOpenOption }) {
           <a href="#portfolio">Portfolio</a>
         </li>
         <li
+          className={openOption.work && "active"}
           onClick={() => {
             setOpenOption({
               portfolio: false,
@@ -44,6 +47,7 @@ function Menu({ menuOpen, setMenuOpen, setOpenOption }) {
           <a href="#works">Works</a>
         </li>
         <li
+          className={openOption.testimonial && "active"}
           onClick={() => {
             setOpenOption({
               portfolio: false,
@@ -57,6 +61,7 @@ function Menu({ menuOpen, setMenuOpen, setOpenOption }) {
           <a href="#testimonials">Testimonials</a>
         </li>
         <li
+          className={openOption.contact && "active"}
           onClick={() => {
             setOpenOption({
               portfolio: false,

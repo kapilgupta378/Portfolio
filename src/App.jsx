@@ -8,6 +8,7 @@ import Contact from "./components/contact/Contact";
 import "./app.scss";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
+import SocialBar from "./socialBar/SocialBar";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openOption, setOpenOption] = useState({
@@ -25,6 +26,7 @@ function App() {
         setMenuOpen={setMenuOpen}
       />
       <Menu
+        openOption={openOption}
         menuOpen={menuOpen}
         setOpenOption={setOpenOption}
         setMenuOpen={setMenuOpen}
@@ -35,6 +37,7 @@ function App() {
         <Works openOption={openOption} setOpenOption={setOpenOption} />
         <Testimonials openOption={openOption} setOpenOption={setOpenOption} />
         <Contact openOption={openOption} setOpenOption={setOpenOption} />
+        <SocialBar menuOpen={menuOpen} />
       </div>
     </div>
   );
