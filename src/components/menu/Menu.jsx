@@ -11,7 +11,7 @@ function Menu({ menuOpen, setMenuOpen, setOpenOption }) {
               work: false,
               testimonial: false,
               contact: false,
-              introHide: true,
+              introHide: false,
             });
           }}
         >
@@ -34,7 +34,7 @@ function Menu({ menuOpen, setMenuOpen, setOpenOption }) {
           onClick={() => {
             setOpenOption({
               portfolio: false,
-              work: false,
+              work: true,
               testimonial: false,
               contact: false,
               introHide: true,

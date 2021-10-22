@@ -32,9 +32,9 @@ function App() {
       <div className="sections">
         <Intro menuOpen={menuOpen} openOption={openOption} />
         <Portfolio openOption={openOption} setOpenOption={setOpenOption} />
-        <Works />
-        <Testimonials />
-        <Contact />
+        <Works openOption={openOption} setOpenOption={setOpenOption} />
+        <Testimonials openOption={openOption} setOpenOption={setOpenOption} />
+        <Contact openOption={openOption} setOpenOption={setOpenOption} />
       </div>
     </div>
   );

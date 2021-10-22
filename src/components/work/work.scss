@@ -1,13 +1,24 @@
 @import "../../global.scss";
 
 .works {
-  background-color: crimson;
+  height: 68vh;
+  width: 64%;
+  position: absolute;
+  top: 20%;
+  left: -65%;
+  background-color: $mainColor2;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   overflow: hidden;
-
+  border-radius: 30px;
+  transition: all 1s ease;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  &.active {
+    left: 4%;
+  }
   .arrow {
     height: 50px;
     position: absolute;
@@ -18,12 +29,12 @@
     }
 
     &.left {
-      left: 100px;
+      left: 10px;
       transform: rotateY(180deg);
     }
 
     &.right {
-      right: 100px;
+      right: 10px;
     }
   }
 
@@ -41,7 +52,7 @@
     }
 
     .container {
-      width: 100vw;
+      width: 63vw;
       display: flex;
       align-items: center;
       justify-content: center;
