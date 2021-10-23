@@ -1,11 +1,40 @@
+import { useState } from "react";
 import "./menu.scss";
 
 function Menu({ menuOpen, openOption, setOpenOption }) {
+  const [humSlider, setHumSlider] = useState({
+    home: true,
+    testimonial: false,
+    work: false,
+    contact: false,
+    portfolio: false,
+  });
+  console.log(humSlider);
   return (
     <div className={"menu " + (menuOpen && "active")}>
+      <input type="radio" name="ss" id="Hum_home" checked={humSlider.home} />
+      <input
+        type="radio"
+        name="ss"
+        id="Hum_portfolio"
+        checked={humSlider.portfolio}
+      />
+      <input type="radio" name="ss" id="Hum_work" checked={humSlider.work} />
+      <input
+        type="radio"
+        name="ss"
+        id="Hum_testimonial"
+        checked={humSlider.testimonial}
+      />
+      <input
+        type="radio"
+        name="ss"
+        id="Hum_contact"
+        checked={humSlider.contact}
+      />
       <ul>
+        <div className="hum_slider"></div>
         <li
-          className={!openOption.introHide && "active"}
           onClick={() => {
             setOpenOption({
               portfolio: false,
@@ -14,12 +43,12 @@ function Menu({ menuOpen, openOption, setOpenOption }) {
               contact: false,
               introHide: false,
             });
+            setHumSlider({ home: true });
           }}
         >
           <a href="#intro">Home</a>
         </li>
         <li
-          className={openOption.portfolio && "active"}
           onClick={() => {
             setOpenOption({
               portfolio: true,
@@ -28,12 +57,12 @@ function Menu({ menuOpen, openOption, setOpenOption }) {
               contact: false,
               introHide: true,
             });
+            setHumSlider({ portfolio: true });
           }}
         >
           <a href="#portfolio">Portfolio</a>
         </li>
         <li
-          className={openOption.work && "active"}
           onClick={() => {
             setOpenOption({
               portfolio: false,
@@ -42,12 +71,12 @@ function Menu({ menuOpen, openOption, setOpenOption }) {
               contact: false,
               introHide: true,
             });
+            setHumSlider({ work: true });
           }}
         >
           <a href="#works">Works</a>
         </li>
         <li
-          className={openOption.testimonial && "active"}
           onClick={() => {
             setOpenOption({
               portfolio: false,
@@ -56,12 +85,12 @@ function Menu({ menuOpen, openOption, setOpenOption }) {
               contact: false,
               introHide: true,
             });
+            setHumSlider({ testimonial: true });
           }}
         >
           <a href="#testimonials">Testimonials</a>
         </li>
         <li
-          className={openOption.contact && "active"}
           onClick={() => {
             setOpenOption({
               portfolio: false,
@@ -70,6 +99,7 @@ function Menu({ menuOpen, openOption, setOpenOption }) {
               contact: true,
               introHide: true,
             });
+            setHumSlider({ contact: true });
           }}
         >
           <a href="#contact">Contact</a>

@@ -3,36 +3,44 @@ import "./social.scss";
 const SocialBar = ({ menuOpen }) => {
   return (
     <div class={"socialwrapper " + (menuOpen && "active")}>
-      <div class="button">
+      <a
+        href="https://www.linkedin.com/in/kapil-gupta-5527aa174/"
+        target="_blank"
+        class="button"
+      >
         <div class="icon">
           <i class="fab fa-linkedin-in"></i>
         </div>
         <span>Linkedin</span>
-      </div>
-      <div class="button">
+      </a>
+      <a href="https://github.com/kapilgupta378" target="_blank" class="button">
         <div class="icon">
           <i class="fab fa-github"></i>
         </div>
-        <span>Github</span>
-      </div>
-      <div class="button">
+        <span>Githu nb</span>
+      </a>
+      <a href="https://www.w3docs.com/" target="_blank" class="button">
         <div class="icon">
           <i class="fab fa-instagram"></i>
         </div>
         <span>Instagram</span>
-      </div>
-      <div class="button">
+      </a>
+      <a href="https://codepen.io/kapilgupta378" target="_blank" class="button">
         <div class="icon">
           <i class="fab fa-codepen"></i>
         </div>
         <span>Codepen</span>
-      </div>
-      <div class="button">
+      </a>
+      <a
+        href="https://mail.google.com/mail/u/0/"
+        target="_blank"
+        class="button"
+      >
         <div class="icon">
-          <i class="fab fa-youtube"></i>
+          <i class="fab fa-google"></i>
         </div>
-        <span>YouTube</span>
-      </div>
+        <span>Gmail</span>
+      </a>
     </div>
   );
 };

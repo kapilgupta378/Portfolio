@@ -21,7 +21,15 @@
   &.active {
     right: 15px;
   }
-
+  .hum_slider {
+    background-color: #d9d9d97d;
+    width: 167px;
+    height: 63px;
+    // top: 90px;
+    position: absolute;
+    border-radius: 15px;
+    transition: all 1s ease;
+  }
   ul {
     display: flex;
     flex-direction: column;
@@ -50,5 +58,66 @@
         font-weight: 700;
       }
     }
+  }
+
+  #Hum_home {
+    &:checked {
+      ~ {
+        ul {
+          .hum_slider {
+            top: 90px;
+          }
+        }
+      }
+    }
+  }
+  #Hum_portfolio {
+    &:checked {
+      ~ {
+        ul {
+          .hum_slider {
+            top: 160px;
+          }
+        }
+      }
+    }
+  }
+  #Hum_work {
+    &:checked {
+      ~ {
+        ul {
+          .hum_slider {
+            top: 223px;
+          }
+        }
+      }
+    }
+  }
+  #Hum_testimonial {
+    &:checked {
+      ~ {
+        ul {
+          .hum_slider {
+            top: 286px;
+          }
+        }
+      }
+    }
+  }
+
+  #Hum_contact {
+    &:checked {
+      ~ {
+        ul {
+          .hum_slider {
+            top: 352px;
+          }
+        }
+      }
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
   }
 }
