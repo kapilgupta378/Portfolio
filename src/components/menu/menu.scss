@@ -21,16 +21,6 @@
   &.active {
     right: 15px;
   }
-  .hum_slider {
-    background-color: #d9d9d97d;
-    width: 167px;
-    height: 63px;
-    // top: 90px;
-    position: absolute;
-    border-radius: 15px;
-    transition: all 1s ease;
-    display: none;
-  }
   ul {
     display: flex;
     flex-direction: column;
@@ -43,6 +33,15 @@
     font-weight: 500;
     color: #fff;
     width: 60%;
+
+    .hum_slider {
+      background-color: #d9d9d97d;
+      width: 167px;
+      height: 63px;
+      position: absolute;
+      border-radius: 15px;
+      transition: all 1s ease;
+    }
 
     li {
       margin-bottom: 25px;
@@ -66,7 +65,7 @@
       ~ {
         ul {
           .hum_slider {
-            top: 14%;
+            top: 90px;
           }
         }
       }

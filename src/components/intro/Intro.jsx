@@ -3,7 +3,6 @@ import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import img from "./kapilgupta.png";
 import video from "./videos/video1.mp4";
-import down from "../../assets/down.png";
 function Intro({ menuOpen, openOption }) {
   const textRef = useRef();
 

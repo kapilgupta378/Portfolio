@@ -133,24 +133,6 @@
           }
         }
       }
-      a {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        color: white;
-
-        img {
-          color: white;
-          width: 30px;
-          // animation: arrowBlink 2s infinite;
-        }
-
-        @keyframes arrowBlink {
-          100% {
-            opacity: 0;
-          }
-        }
-      }
     }
   }
 }
