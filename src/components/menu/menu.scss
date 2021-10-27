@@ -29,6 +29,7 @@
     position: absolute;
     border-radius: 15px;
     transition: all 1s ease;
+    display: none;
   }
   ul {
     display: flex;
@@ -65,7 +66,7 @@
       ~ {
         ul {
           .hum_slider {
-            top: 90px;
+            top: 14%;
           }
         }
       }
