@@ -4,7 +4,7 @@
   top: 15%;
   left: -71%;
   width: 70%;
-  height: 75%;
+  height: 73%;
   position: absolute;
   background-color: $mainColor2;
   display: flex;
@@ -49,17 +49,24 @@
       background: #d9d9d97d;
       width: 250px;
       height: 70%;
+      margin: 2rem;
       border-radius: 10px;
       box-shadow: 0px 0px 15px -8px black;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      align-items: center;
       padding: 20px;
       transition: all 1s ease;
 
       @include mobile {
         height: 180px;
         margin: 10px 0;
+      }
+      h3 {
+        color: crimson;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
       }
 
       &.featured {
@@ -71,6 +78,7 @@
           width: 250px;
           height: 180px;
           margin: 1px;
+          color: crimson;
         }
       }
 
@@ -104,13 +112,29 @@
       }
 
       .center {
+        margin-top: 29px;
+        width: 12rem;
+        height: 12rem;
         text-align: center;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         border-radius: 10px;
 
         @include mobile {
           font-size: 12px;
           padding: 5px;
+        }
+        .items {
+          width: 10em;
+          display: flex;
+          justify-content: space-between;
+        }
+        h5 {
+          span {
+            color: gray;
+          }
         }
       }
       .bottom {

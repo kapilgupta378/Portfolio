@@ -3,37 +3,44 @@ import dashboard from "../../assets/dashboard.png";
 import mintra from "../../assets/mintra.png";
 import netflix from "../../assets/netflix.png";
 import linkedin1 from "../../assets/linkedin1.png";
+import stripe from "../../assets/stripe.png";
 
 export const featuredPortfolio = [
   {
     id: 1,
     title: "Amazon Clone",
     img: amzon,
+    link: "https://amazon-clonebykapil.netlify.app/",
   },
   {
     id: 2,
     title: "React Js Dasboard",
     img: dashboard,
+    link: "",
   },
   {
     id: 3,
     title: "Mintra Clone",
     img: mintra,
+    link: "https://mintra-clonebykapil.netlify.app/",
   },
   {
     id: 4,
     title: "Netflix Clone",
     img: netflix,
+    link: "https://netflix-clonebykapil.netlify.app/",
   },
   {
     id: 5,
     title: "Linkedin Clone",
     img: linkedin1,
+    link: "https://linkedin-clonereact.netlify.app/",
   },
   {
     id: 6,
-    title: "Banking App",
-    img: "https://cdn.dribbble.com/users/3307260/screenshots/15468444/media/447b4501f7a145b05e11c70199a9c417.jpg?compress=1&resize=1200x900",
+    title: "Travel Advisor",
+    img: stripe,
+    link: "https://strip-ui-kapil.netlify.app/",
   },
 ];
 

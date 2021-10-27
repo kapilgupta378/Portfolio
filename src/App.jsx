@@ -18,18 +18,29 @@ function App() {
     contact: false,
     introHide: false,
   });
+
+  const [humSlider, setHumSlider] = useState({
+    home: true,
+    testimonial: false,
+    work: false,
+    contact: false,
+    portfolio: false,
+  });
   return (
     <div className="app">
       <Topbar
         setOpenOption={setOpenOption}
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
+        setHumSlider={setHumSlider}
       />
       <Menu
         openOption={openOption}
         menuOpen={menuOpen}
         setOpenOption={setOpenOption}
         setMenuOpen={setMenuOpen}
+        humSlider={humSlider}
+        setHumSlider={setHumSlider}
       />
       <div className="sections">
         <Intro menuOpen={menuOpen} openOption={openOption} />

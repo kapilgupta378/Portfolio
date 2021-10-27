@@ -17,7 +17,7 @@ const SocialBar = ({ menuOpen }) => {
         <div class="icon">
           <i class="fab fa-github"></i>
         </div>
-        <span>Githu nb</span>
+        <span>Github</span>
       </a>
       <a href="https://www.w3docs.com/" target="_blank" class="button">
         <div class="icon">

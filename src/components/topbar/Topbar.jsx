@@ -1,6 +1,6 @@
 import "./topbar.scss";
 import { Person, Mail } from "@material-ui/icons";
-function Topbar({ menuOpen, setMenuOpen, setOpenOption }) {
+function Topbar({ menuOpen, setMenuOpen, setOpenOption, setHumSlider }) {
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
@@ -28,6 +28,13 @@ function Topbar({ menuOpen, setMenuOpen, setOpenOption }) {
                 testimonial: false,
                 contact: false,
                 introHide: false,
+              });
+              setHumSlider({
+                home: true,
+                testimonial: false,
+                work: false,
+                contact: false,
+                portfolio: false,
               });
             }}
           >

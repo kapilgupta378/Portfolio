@@ -79,10 +79,12 @@ function Portfolio({ openOption }) {
       <div className="container">
         {data.map((d, key) => {
           return (
-            <div key={key} className="item">
-              <img src={d.img} alt="" />
-              <h3>{d.title}</h3>
-            </div>
+            <a href={d.link} target="_blank">
+              <div key={key} className="item">
+                <img src={d.img} alt="portfolioimg" />
+                <h3>{d.title}</h3>
+              </div>
+            </a>
           );
         })}
       </div>

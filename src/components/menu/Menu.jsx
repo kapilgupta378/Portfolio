@@ -1,15 +1,13 @@
 import { useState } from "react";
 import "./menu.scss";
 
-function Menu({ menuOpen, openOption, setOpenOption }) {
-  const [humSlider, setHumSlider] = useState({
-    home: true,
-    testimonial: false,
-    work: false,
-    contact: false,
-    portfolio: false,
-  });
-  console.log(humSlider);
+function Menu({
+  menuOpen,
+  openOption,
+  setOpenOption,
+  humSlider,
+  setHumSlider,
+}) {
   return (
     <div className={"menu " + (menuOpen && "active")}>
       <input type="radio" name="ss" id="Hum_home" checked={humSlider.home} />
@@ -88,7 +86,7 @@ function Menu({ menuOpen, openOption, setOpenOption }) {
             setHumSlider({ testimonial: true });
           }}
         >
-          <a href="#testimonials">Testimonials</a>
+          <a href="#testimonials">Skills</a>
         </li>
         <li
           onClick={() => {
