@@ -4,7 +4,7 @@
   padding: 20px;
   top: 16%;
   left: -74%;
-  width: 70%;
+  width: 69%;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 45px;
     color: #fff;
     @include mobile {
       font-size: 20px;
@@ -54,8 +54,8 @@
   }
 
   .item {
-    width: 220px;
-    height: 150px;
+    width: 205px;
+    height: 135px;
     border-radius: 20px;
     margin: 10px 20px;
     display: flex;

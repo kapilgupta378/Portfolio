@@ -4,7 +4,7 @@
   height: 68vh;
   width: 64%;
   position: absolute;
-  top: 20%;
+  top: 18%;
   left: -65%;
   background-color: $mainColor2;
   display: flex;
@@ -52,14 +52,14 @@
     }
 
     .container {
-      width: 63vw;
+      width: 64vw;
       display: flex;
       align-items: center;
       justify-content: center;
 
       .item {
-        width: 700px;
-        height: 100%;
+        width: 85%;
+        height: 99%;
         background-color: white;
         border-radius: 20px;
         display: flex;

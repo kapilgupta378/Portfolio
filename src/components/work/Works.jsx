@@ -41,7 +41,7 @@ export default function Works({ menuOpen, openOption }) {
     <div className={"works " + (openOption.work && "active")} id="works">
       <div
         className="slider"
-        style={{ transform: `translateX(-${currentSlide * 62}vw)` }}
+        style={{ transform: `translateX(-${currentSlide * 64}vw)` }}
       >
         {data.map((d, key) => (
           <div key={key} className="container ">
